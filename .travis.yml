@@ -1,8 +1,14 @@
+sudo: required
+
+language: go
+
 deploy:
   provider: gae
   keyfile: client-secret.json
   project: active-bird-141316
+  verbosity: debug
   on: ci
+
 before_install:
 - openssl aes-256-cbc -K $encrypted_63b9f249935f_key -iv $encrypted_63b9f249935f_iv
   -in client-secret.json.enc -out client-secret.json -d
