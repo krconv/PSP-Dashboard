@@ -1,25 +1,41 @@
 import React, { Component } from 'react';
+import './App.css';
 
 import {
   BrowserRouter as Router,
-  Route,
-  NavLink
+  Route
 } from 'react-router-dom';
+
+import SideNavMenu from './SideNavMenu';
 
 import Home from './Home';
 import Families from './Families';
 
 class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      families: [
+        {
+          surname: "Smith"
+        },
+        {
+          surname: "Smith"
+        },
+        {
+          surname: "Smith"
+        }
+      ]
+    }
+  }
   render() {
     return (
       <div className="App">
         <Router>
-          <div>
-            <nav>
-              <NavLink exact to="/" activeClassName="active">Home</NavLink>
-              <NavLink exact to="/families" activeClassName="active">Families</NavLink>
-            </nav>
-            <main>
+          <div className="page">
+            <SideNavMenu></SideNavMenu>
+            <main className="content">
               <Route exact path="/" component={Home} />
               <Route exact path="/families" component={Families} />
             </main>

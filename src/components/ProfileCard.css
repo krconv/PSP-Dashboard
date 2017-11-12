@@ -1,0 +1,18 @@
+.ProfileCard {
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ProfileCard .mask {
+    border-radius: 50%;
+    width: 68px;
+    height: 68px;
+    overflow: hidden;
+}
+
+.ProfileCard .mask .profile {
+    width: 100%;
+    height: 100%;
+}
