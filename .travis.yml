@@ -5,7 +5,7 @@ node_js:
 deploy:
   provider: gae
   keyfile: client-secret.json
-  project: active-bird-141316
+  project: psp-dashboard
   verbosity: debug
   on: ci
 before_install:
