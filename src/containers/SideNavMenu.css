@@ -1,0 +1,6 @@
+.SideNavMenu {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    color: #4F4F4F;
+}

@@ -1,0 +1,32 @@
+.NavButton {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: inherit;
+}
+
+.NavButton:hover {
+    color: inherit;
+    background-color: lightgray;
+}
+
+.NavButton:active {
+    background-color: darkgray;
+}
+
+.NavButton.active {
+    border-right: 4px solid #6FCF97;
+    color: #6FCF97;
+}
+
+.NavButton img {
+    position: absolute;
+    left: 20px;
+}
+
+.NavButton .label {
+    position: absolute;
+    left: 68px;
+    font-size: 18px;
+}

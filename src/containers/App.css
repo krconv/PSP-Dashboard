@@ -1,0 +1,14 @@
+.App {
+    height: 100%;
+}
+
+.App .page {
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+.App .page .content {
+    flex-grow: 1;
+    background-color: #ddd;
+}
