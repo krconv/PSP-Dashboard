@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import FamilyCard from '../components/FamilyCard';
-
 class Families extends Component {
   render() {
     return (
