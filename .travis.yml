@@ -1,0 +1,12 @@
+sudo: required
+language: node_js
+node_js:
+- '8'
+deploy:
+  provider: gae
+  keyfile: client-secret.json
+  project: psp-dashboard
+  on: master
+before_install:
+- openssl aes-256-cbc -K $encrypted_63b9f249935f_key -iv $encrypted_63b9f249935f_iv
+  -in client-secret.json.enc -out client-secret.json -d
