@@ -1,7 +1,5 @@
 sudo: required
 
-language: go
-
 deploy:
   provider: gae
   keyfile: client-secret.json
